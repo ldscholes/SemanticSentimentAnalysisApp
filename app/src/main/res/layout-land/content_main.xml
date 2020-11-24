@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2018 Google Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorScreenBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.SemanticApp.MainActivity"
+    tools:layout_editor_absoluteY="56dp"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/location_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="open location activity"
+        android:onClick="launchLocation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map_button"
+        app:srcCompat="@drawable/ic_location" />
+
+    <ImageView
+        android:id="@+id/list_place_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:onClick="launchListPlace"
+        app:layout_constraintStart_toEndOf="@+id/add_holiday_label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_holiday_list" />
+
+    <ImageView
+        android:id="@+id/list_holiday_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="launchListHoliday"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_holiday_add" />
+
+    <ImageView
+        android:id="@+id/map_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:onClick="launchMaps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_holiday_button"
+        app:srcCompat="@drawable/ic_holiday_map" />
+
+    <ImageView
+        android:id="@+id/gallery_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="28dp"
+        android:onClick="launchCamera"
+        app:layout_constraintStart_toEndOf="@+id/view_map_label"
+        app:layout_constraintTop_toBottomOf="@+id/list_place_button"
+        app:srcCompat="@drawable/ic_gallery" />
+
+    <TextView
+        android:id="@+id/add_holiday_label"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="launchListHoliday"
+        android:text="Holidays"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/list_holiday_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_map_label"
+        android:layout_width="195dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="60dp"
+        android:text="View Map"
+        android:onClick="launchMaps"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/map_button"
+        app:layout_constraintTop_toBottomOf="@+id/add_holiday_label" />
+
+    <TextView
+        android:id="@+id/location_label"
+        android:layout_width="186dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:text="Location"
+        android:onClick="launchLocation"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/location_button"
+        app:layout_constraintTop_toBottomOf="@+id/view_map_label" />
+
+    <TextView
+        android:id="@+id/view_trip_label"
+        android:layout_width="192dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:onClick="launchListPlace"
+        android:text="Places"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/list_place_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/photo_label"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Photos"
+        android:onClick="launchCamera"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/gallery_button"
+        app:layout_constraintTop_toBottomOf="@+id/view_trip_label" />
+
+    <ImageView
+        android:id="@+id/help_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:contentDescription="open help activity"
+        android:onClick="launchHelp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/location_label"
+        app:layout_constraintTop_toBottomOf="@+id/gallery_button"
+        app:srcCompat="@drawable/ic_help_info" />
+
+    <TextView
+        android:id="@+id/help_label"
+        android:layout_width="244dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:text="Help/Info"
+        android:onClick="launchHelp"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/help_button"
+        app:layout_constraintTop_toBottomOf="@+id/photo_label" />
+
+</android.support.constraint.ConstraintLayout>
