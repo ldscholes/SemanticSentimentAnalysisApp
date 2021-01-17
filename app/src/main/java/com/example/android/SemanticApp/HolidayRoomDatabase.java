@@ -31,7 +31,7 @@ import android.support.annotation.RequiresApi;
  * The fact that this has very few comments emphasizes its coolness.
  */
 
-@Database(entities = {Holiday.class}, version = 7,  exportSchema = false)
+@Database(entities = {Holiday.class}, version = 8,  exportSchema = false)
 public abstract class HolidayRoomDatabase extends RoomDatabase {
 
     public abstract HolidayDao holidayDao();
@@ -79,11 +79,27 @@ public abstract class HolidayRoomDatabase extends RoomDatabase {
     private static class PopulateDbAsync extends AsyncTask<Void, Void, Void> {
 
         private final HolidayDao mDao;
-        String [] holidays = {"I recently had the Beyond Whopper. It was good but needed some more smoke flavor if they really want it to taste like a Whopper does. Texture was pretty bang on though.", "It tastes like a whopper, but thats because the whopper isnt that much of a burger to begin with", "Molly-whopper", "That's cute. It's not happened yet. But stay tuned for the final season of the UK, it's gonna be a whopper!","“Tastes like a beef whopper!” “LIES!”", "it tastes exactly like a whopper\n" +
+        String [] Whopperholidays = {"I recently had the Beyond Whopper. It was good but needed some more smoke flavor if they really want it to taste like a Whopper does. Texture was pretty bang on though.", "It tastes like a whopper, but thats because the whopper isnt that much of a burger to begin with", "Molly-whopper", "That's cute. It's not happened yet. But stay tuned for the final season of the UK, it's gonna be a whopper!","“Tastes like a beef whopper!” “LIES!”", "it tastes exactly like a whopper\n" +
                 "\n" +
                 "garbage", "I like impossible burgers but the impossible Whopper was garbage", "Their opinion goes against mainstream veganism then, which considers it to be totally fine to get your impossible whopper cooked on the same broiler as meat burgers."};
 
-        PopulateDbAsync(HolidayRoomDatabase db) {
+
+        String [] BBholidays = {"You'd be better off getting it from somewhere like Patrolbase which, ironically, has it cheaper than BBGuns4Less. Just my unsolicited 2 pence, but I'd also suggest avoiding anything that refers to airsoft guns as BB guns (BBGuns4Less, JustBBGuns, etc.) as a lot of the stuff they sell is really not good unless you just want to run around in your back garden with some mates. For serious airsofting, you'll want something that can stand up to some wear and tear.",
+                "JustBBGuns, BBGuns4less and OnlyBBGuns (Who I swear are just an alternative IP for BBGuns4less) aren't best recommended.",
+                "landwarrior, fire-support, actionhobbies, redwolfairsoft uk,airsoft world, extreme airsoft, justbbguns, bbguns4less & onlybbguns just a few in the UK",
+                "That's a standard price, nothing special. The JG, Specna arms and Umarex guns are all that same price, I'd pick up one of those over the cyma.That's a standard price, nothing special. The JG, Specna arms and Umarex guns are all that same price, I'd pick up one of those over the cyma. https://www.patrolbase.co.uk/airsoft-ar36-variants bbguns4less isn't the best of sites either, do not believe a single review or opinion they post.",
+                "Don't buy off bbguns4less, they're just a cheap tack website most of the time.",
+                "if your based in the uk one of the places i use as a base for a bb gun is BBguns4less they have a breakers yard i get the odd few guns and turn them into other ones for cosplays :) half time they dont fire or anything so its great for what we use them for",
+                "I've just ordered a mystery box from bbguns4less, hoping it has something decent in apparently they are pretty good value, couldnt make my mind up on one so i figured this would be a fun way to go.",
+                "avoid JustBBguns avoid BBguns4less you'll be fine",
+                "Shops to check out: Patrol Base, ProAirsoftSupplies, ZeroOneAirsoft and Airsoft World Shops to avoid: JustBBGuns, BBGuns4Less, OnlyBBGuns and those faggots at WolfArmouries",
+                "BBGUNS4LESS do it",
+                "Avoid those ''onlybbguns'' bbguns4less'' ''justbbguns'' type sites.Find something better on actionhobbies,geniestuff or airsoftworld."};
+
+        String [] BBclass = {"Negative","Negative","Neutral","Negative","Negative","Positive","Positive", "Negative", "Negative", "Neutral", "Negative"};
+
+
+                PopulateDbAsync(HolidayRoomDatabase db) {
             mDao = db.holidayDao();
         }
 
@@ -93,10 +109,17 @@ public abstract class HolidayRoomDatabase extends RoomDatabase {
             // Not needed if you only populate on creation.
            mDao.deleteAll();
 
-            for( int i = 0; i <= holidays.length - 1; i++) {
-                Holiday holiday = new Holiday(holidays[i]);
+            for( int i = 0; i <= Whopperholidays.length - 1; i++) {
+                Holiday holiday = new Holiday(Whopperholidays[i], "Whopper");
                 mDao.insert(holiday);
             }
+
+            for( int i = 0; i <= BBholidays.length - 1; i++) {
+                Holiday holiday = new Holiday(BBholidays[i], BBclass[i],"BBGUNS4LESS");
+                mDao.insert(holiday);
+            }
+
+
             return null;
         }
     }

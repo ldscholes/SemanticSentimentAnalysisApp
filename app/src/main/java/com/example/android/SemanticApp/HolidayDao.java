@@ -35,6 +35,12 @@ public interface HolidayDao {
     @Query("SELECT * from holiday_table ORDER BY id DESC")
     LiveData<List<Holiday>> getAllHolidays();
 
+    @Query("SELECT * from holiday_table where product = \"BBGUNS4LESS\" ORDER BY id DESC ")
+    LiveData<List<Holiday>> getBBHolidays();
+
+    @Query("SELECT * from holiday_table where product = \"Whopper\" ORDER BY id DESC")
+    LiveData<List<Holiday>> getWhopperHolidays();
+
     @Query("SELECT id from holiday_table ORDER BY id DESC LIMIT 1")
     int getLatestHolidayId();
 

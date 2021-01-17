@@ -25,12 +25,12 @@ public class HolidayRoomDatabase_Impl extends HolidayRoomDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(7) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(8) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `holiday_table` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `holiday` TEXT NOT NULL, `notes` TEXT, `opinion` TEXT)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `holiday_table` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `holiday` TEXT NOT NULL, `product` TEXT NOT NULL, `notes` TEXT, `opinion` TEXT)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"89af08c2776cb19e8789e6b5d3118ff5\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"0eaeac1f484691a7f972abd79d965183\")");
       }
 
       @Override
@@ -60,9 +60,10 @@ public class HolidayRoomDatabase_Impl extends HolidayRoomDatabase {
 
       @Override
       protected void validateMigration(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsHolidayTable = new HashMap<String, TableInfo.Column>(4);
+        final HashMap<String, TableInfo.Column> _columnsHolidayTable = new HashMap<String, TableInfo.Column>(5);
         _columnsHolidayTable.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
         _columnsHolidayTable.put("holiday", new TableInfo.Column("holiday", "TEXT", true, 0));
+        _columnsHolidayTable.put("product", new TableInfo.Column("product", "TEXT", true, 0));
         _columnsHolidayTable.put("notes", new TableInfo.Column("notes", "TEXT", false, 0));
         _columnsHolidayTable.put("opinion", new TableInfo.Column("opinion", "TEXT", false, 0));
         final HashSet<TableInfo.ForeignKey> _foreignKeysHolidayTable = new HashSet<TableInfo.ForeignKey>(0);
@@ -75,7 +76,7 @@ public class HolidayRoomDatabase_Impl extends HolidayRoomDatabase {
                   + " Found:\n" + _existingHolidayTable);
         }
       }
-    }, "89af08c2776cb19e8789e6b5d3118ff5", "6eb221f6a5c32493651526ec15fac584");
+    }, "0eaeac1f484691a7f972abd79d965183", "86de21ae876d0383e2839016bfc3ad8c");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

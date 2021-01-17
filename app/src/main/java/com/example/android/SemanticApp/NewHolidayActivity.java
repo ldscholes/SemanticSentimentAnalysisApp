@@ -122,6 +122,9 @@ public class NewHolidayActivity extends AppCompatActivity {
                     String note = mEditNoteView.getText().toString();
 
                     // Put the new word in the extras for the reply Intent.
+                    System.out.println(holiday);
+                    System.out.println(note);
+                    System.out.println(opinion);
                     replyIntent.putExtra(EXTRA_REPLY, holiday);
                     replyIntent.putExtra(EXTRA_REPLY_NOTE, note);
                     replyIntent.putExtra(EXTRA_REPLY_OPINION, opinion);

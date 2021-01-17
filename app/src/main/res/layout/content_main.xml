@@ -36,7 +36,7 @@
         android:contentDescription="open help activity"
         android:onClick="launchHelp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/list_holiday_button2"
+        app:layout_constraintTop_toBottomOf="@+id/list_holiday_button3"
         app:srcCompat="@drawable/ic_help_info" />
 
     <ImageView
@@ -46,7 +46,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:onClick="launchListHoliday"
+        android:onClick="launchListWhopper"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_food" />
@@ -58,10 +58,22 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:onClick="launchListHoliday"
+        android:onClick="launchListBB"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/list_holiday_button"
         app:srcCompat="@drawable/ic_bbguns4less" />
+
+    <ImageView
+        android:id="@+id/list_holiday_button3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="launchListHoliday"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_holiday_button2"
+        app:srcCompat="@drawable/places_ic_search" />
 
     <TextView
         android:id="@+id/add_holiday_label"
@@ -71,7 +83,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
-        android:onClick="launchListHoliday"
+        android:onClick="launchListWhopper"
         android:text="Whopper"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,13 +98,29 @@
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
-        android:onClick="launchListHoliday"
+        android:onClick="launchListBB"
         android:text="BBGUNS4LESS"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/list_holiday_button2"
         app:layout_constraintTop_toTopOf="@+id/list_holiday_button2" />
+
+    <TextView
+        android:id="@+id/add_holiday_label3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:onClick="launchListHoliday"
+        android:text="All comments"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/list_holiday_button2"
+        app:layout_constraintTop_toTopOf="@+id/list_holiday_button3" />
 
     <TextView
         android:id="@+id/help_label"

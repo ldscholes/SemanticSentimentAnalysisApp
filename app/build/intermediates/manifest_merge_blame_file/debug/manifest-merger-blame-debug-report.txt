@@ -41,7 +41,7 @@
 26-->[com.google.android.gms:play-services-maps:16.0.0] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\39953cb7825a7e15cb18a79c82893260\play-services-maps-16.0.0\AndroidManifest.xml:28:9-32
 27
 28    <application
-28-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:15:5-126:19
+28-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:15:5-142:19
 29        android:allowBackup="true"
 29-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:16:9-35
 30        android:debuggable="true"
@@ -140,10 +140,10 @@
 84        </activity>
 85        <activity
 85-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:68:9-75:20
-86            android:name="com.example.android.SemanticApp.PlacesActivity"
+86            android:name="com.example.android.SemanticApp.ListActivityBB"
 86-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:69:13-43
-87            android:label="Places List"
-87-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:70:13-40
+87            android:label="Comment List"
+87-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:70:13-41
 88            android:parentActivityName="com.example.android.SemanticApp.MainActivity"
 88-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:71:13-55
 89            android:theme="@style/AppTheme.NoActionBar" >
@@ -157,123 +157,157 @@
 93        </activity>
 94        <activity
 94-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:76:9-83:20
-95            android:name="com.example.android.SemanticApp.NewPlaceActivity"
-95-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:77:13-45
-96            android:label="New Place"
-96-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:78:13-38
-97            android:parentActivityName="com.example.android.SemanticApp.PlacesActivity" >
-97-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:79:13-57
-98            <meta-data
-98-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:38:13-40:80
-99                android:name="android.support.PARENT_ACTIVITY"
-99-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:39:17-63
-100                android:value="com.example.android.SemanticApp.PlacesActivity" />
-100-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:40:17-77
-101        </activity>
-102        <activity
-102-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:84:9-91:20
-103            android:name="com.example.android.SemanticApp.SettingsActivity"
-103-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:85:13-45
-104            android:label="Settings"
-104-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:86:13-37
-105            android:parentActivityName="com.example.android.SemanticApp.MainActivity" >
-105-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:87:13-55
-106            <meta-data
-106-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:38:13-40:80
-107                android:name="android.support.PARENT_ACTIVITY"
-107-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:39:17-63
-108                android:value="com.example.android.SemanticApp.MainActivity" />
-108-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:40:17-77
-109        </activity>
-110        <activity
-110-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:92:9-99:20
-111            android:name="com.example.android.SemanticApp.NewHolidayActivity"
-111-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:93:13-47
-112            android:label="Comment"
-112-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:94:13-36
-113            android:parentActivityName="com.example.android.SemanticApp.ListActivity" >
-113-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:95:13-55
-114            <meta-data
-114-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:38:13-40:80
-115                android:name="android.support.PARENT_ACTIVITY"
-115-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:39:17-63
-116                android:value="com.example.android.SemanticApp.ListActivity" />
-116-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:40:17-77
-117        </activity>
-118        <activity
-118-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:100:9-107:20
-119            android:name="com.example.android.SemanticApp.LocationActivity"
-119-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:101:13-45
-120            android:label="Location"
-120-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:102:13-37
-121            android:parentActivityName="com.example.android.SemanticApp.MainActivity" >
-121-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:103:13-55
-122            <meta-data
-122-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:38:13-40:80
-123                android:name="android.support.PARENT_ACTIVITY"
-123-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:39:17-63
-124                android:value="com.example.android.SemanticApp.MainActivity" />
-124-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:40:17-77
-125        </activity>
-126        <activity
-126-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:108:9-115:20
-127            android:name="com.example.android.SemanticApp.CameraActivity"
-127-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:109:13-43
-128            android:label="Camera"
-128-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:110:13-35
-129            android:parentActivityName="com.example.android.SemanticApp.MainActivity" >
-129-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:111:13-55
-130            <meta-data
-130-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:38:13-40:80
-131                android:name="android.support.PARENT_ACTIVITY"
-131-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:39:17-63
-132                android:value="com.example.android.SemanticApp.MainActivity" />
-132-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:40:17-77
-133        </activity>
-134
-135        <provider
-136            android:name="android.support.v4.content.FileProvider"
-136-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:117:13-67
-137            android:authorities="com.example.android.SemanticApp.provider"
-137-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:118:13-60
-138            android:exported="false"
-138-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:119:13-37
-139            android:grantUriPermissions="true" >
-139-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:120:13-47
+95            android:name="com.example.android.SemanticApp.ListActivityWhopper"
+95-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:77:13-48
+96            android:label="Comment List"
+96-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:78:13-41
+97            android:parentActivityName="com.example.android.SemanticApp.MainActivity"
+97-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:79:13-55
+98            android:theme="@style/AppTheme.NoActionBar" >
+98-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:77:49-92
+99            <meta-data
+99-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:38:13-40:80
+100                android:name="android.support.PARENT_ACTIVITY"
+100-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:39:17-63
+101                android:value="com.example.android.SemanticApp.MainActivity" />
+101-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:40:17-77
+102        </activity>
+103        <activity
+103-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:84:9-91:20
+104            android:name="com.example.android.SemanticApp.PlacesActivity"
+104-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:85:13-43
+105            android:label="Places List"
+105-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:86:13-40
+106            android:parentActivityName="com.example.android.SemanticApp.MainActivity"
+106-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:87:13-55
+107            android:theme="@style/AppTheme.NoActionBar" >
+107-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:85:44-87
+108            <meta-data
+108-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:38:13-40:80
+109                android:name="android.support.PARENT_ACTIVITY"
+109-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:39:17-63
+110                android:value="com.example.android.SemanticApp.MainActivity" />
+110-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:40:17-77
+111        </activity>
+112        <activity
+112-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:92:9-99:20
+113            android:name="com.example.android.SemanticApp.NewPlaceActivity"
+113-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:93:13-45
+114            android:label="New Place"
+114-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:94:13-38
+115            android:parentActivityName="com.example.android.SemanticApp.PlacesActivity" >
+115-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:95:13-57
+116            <meta-data
+116-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:38:13-40:80
+117                android:name="android.support.PARENT_ACTIVITY"
+117-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:39:17-63
+118                android:value="com.example.android.SemanticApp.PlacesActivity" />
+118-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:40:17-77
+119        </activity>
+120        <activity
+120-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:100:9-107:20
+121            android:name="com.example.android.SemanticApp.SettingsActivity"
+121-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:101:13-45
+122            android:label="Settings"
+122-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:102:13-37
+123            android:parentActivityName="com.example.android.SemanticApp.MainActivity" >
+123-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:103:13-55
+124            <meta-data
+124-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:38:13-40:80
+125                android:name="android.support.PARENT_ACTIVITY"
+125-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:39:17-63
+126                android:value="com.example.android.SemanticApp.MainActivity" />
+126-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:40:17-77
+127        </activity>
+128        <activity
+128-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:108:9-115:20
+129            android:name="com.example.android.SemanticApp.NewHolidayActivity"
+129-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:109:13-47
+130            android:label="Comment"
+130-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:110:13-36
+131            android:parentActivityName="com.example.android.SemanticApp.ListActivity" >
+131-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:111:13-55
+132            <meta-data
+132-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:38:13-40:80
+133                android:name="android.support.PARENT_ACTIVITY"
+133-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:39:17-63
+134                android:value="com.example.android.SemanticApp.ListActivity" />
+134-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:40:17-77
+135        </activity>
+136        <activity
+136-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:116:9-123:20
+137            android:name="com.example.android.SemanticApp.LocationActivity"
+137-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:117:13-45
+138            android:label="Location"
+138-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:118:13-37
+139            android:parentActivityName="com.example.android.SemanticApp.MainActivity" >
+139-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:119:13-55
 140            <meta-data
-140-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:121:13-124:25
-141                android:name="android.support.FILE_PROVIDER_PATHS"
-141-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:122:17-67
-142                android:resource="@xml/file_paths" >
-142-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:123:17-51
-143            </meta-data>
-144        </provider>
-145        <provider
-145-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\0319b019d62b322e5e3e8b69d1380784\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
-146            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
-146-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\0319b019d62b322e5e3e8b69d1380784\extensions-1.1.1\AndroidManifest.xml:24:13-83
-147            android:authorities="com.example.android.SemanticApp.lifecycle-trojan"
-147-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\0319b019d62b322e5e3e8b69d1380784\extensions-1.1.1\AndroidManifest.xml:25:13-68
-148            android:exported="false"
-148-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\0319b019d62b322e5e3e8b69d1380784\extensions-1.1.1\AndroidManifest.xml:26:13-37
-149            android:multiprocess="true" />
-149-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\0319b019d62b322e5e3e8b69d1380784\extensions-1.1.1\AndroidManifest.xml:27:13-40
-150
-151        <activity
-151-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\a1dd93e89986977cdb4ffd5b44aa1226\play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
-152            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-152-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\a1dd93e89986977cdb4ffd5b44aa1226\play-services-base-16.0.1\AndroidManifest.xml:24:13-79
-153            android:exported="false"
-153-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\a1dd93e89986977cdb4ffd5b44aa1226\play-services-base-16.0.1\AndroidManifest.xml:25:13-37
-154            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-154-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\a1dd93e89986977cdb4ffd5b44aa1226\play-services-base-16.0.1\AndroidManifest.xml:26:13-72
-155
-156        <meta-data
-156-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\18c6ca0e9127e45469c1d04a4796b4b0\play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
-157            android:name="com.google.android.gms.version"
-157-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\18c6ca0e9127e45469c1d04a4796b4b0\play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
-158            android:value="@integer/google_play_services_version" />
-158-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\18c6ca0e9127e45469c1d04a4796b4b0\play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
-159    </application>
-160
-161</manifest>
+140-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:38:13-40:80
+141                android:name="android.support.PARENT_ACTIVITY"
+141-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:39:17-63
+142                android:value="com.example.android.SemanticApp.MainActivity" />
+142-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:40:17-77
+143        </activity>
+144        <activity
+144-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:124:9-131:20
+145            android:name="com.example.android.SemanticApp.CameraActivity"
+145-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:125:13-43
+146            android:label="Camera"
+146-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:126:13-35
+147            android:parentActivityName="com.example.android.SemanticApp.MainActivity" >
+147-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:127:13-55
+148            <meta-data
+148-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:38:13-40:80
+149                android:name="android.support.PARENT_ACTIVITY"
+149-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:39:17-63
+150                android:value="com.example.android.SemanticApp.MainActivity" />
+150-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:40:17-77
+151        </activity>
+152
+153        <provider
+154            android:name="android.support.v4.content.FileProvider"
+154-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:133:13-67
+155            android:authorities="com.example.android.SemanticApp.provider"
+155-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:134:13-60
+156            android:exported="false"
+156-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:135:13-37
+157            android:grantUriPermissions="true" >
+157-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:136:13-47
+158            <meta-data
+158-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:137:13-140:25
+159                android:name="android.support.FILE_PROVIDER_PATHS"
+159-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:138:17-67
+160                android:resource="@xml/file_paths" >
+160-->C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:139:17-51
+161            </meta-data>
+162        </provider>
+163        <provider
+163-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\0319b019d62b322e5e3e8b69d1380784\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
+164            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+164-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\0319b019d62b322e5e3e8b69d1380784\extensions-1.1.1\AndroidManifest.xml:24:13-83
+165            android:authorities="com.example.android.SemanticApp.lifecycle-trojan"
+165-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\0319b019d62b322e5e3e8b69d1380784\extensions-1.1.1\AndroidManifest.xml:25:13-68
+166            android:exported="false"
+166-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\0319b019d62b322e5e3e8b69d1380784\extensions-1.1.1\AndroidManifest.xml:26:13-37
+167            android:multiprocess="true" />
+167-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\0319b019d62b322e5e3e8b69d1380784\extensions-1.1.1\AndroidManifest.xml:27:13-40
+168
+169        <activity
+169-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\a1dd93e89986977cdb4ffd5b44aa1226\play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+170            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+170-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\a1dd93e89986977cdb4ffd5b44aa1226\play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+171            android:exported="false"
+171-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\a1dd93e89986977cdb4ffd5b44aa1226\play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+172            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+172-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\a1dd93e89986977cdb4ffd5b44aa1226\play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+173
+174        <meta-data
+174-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\18c6ca0e9127e45469c1d04a4796b4b0\play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+175            android:name="com.google.android.gms.version"
+175-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\18c6ca0e9127e45469c1d04a4796b4b0\play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+176            android:value="@integer/google_play_services_version" />
+176-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\18c6ca0e9127e45469c1d04a4796b4b0\play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+177    </application>
+178
+179</manifest>

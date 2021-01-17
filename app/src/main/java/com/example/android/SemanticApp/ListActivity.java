@@ -187,7 +187,7 @@ public class ListActivity extends AppCompatActivity {
         String holiday_opinion_data = data.getStringExtra(NewHolidayActivity.EXTRA_REPLY_OPINION);
 
         if (requestCode == NEW_HOLIDAY_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK) {
-            Holiday holiday = new Holiday(holiday_data, holiday_note_data, holiday_opinion_data);
+            Holiday holiday = new Holiday(holiday_data, holiday_note_data, holiday_opinion_data, "");
             // Save the data.
             mHolidayViewModel.insert(holiday);
         } else if (requestCode == UPDATE_HOLIDAY_ACTIVITY_REQUEST_CODE
@@ -195,7 +195,7 @@ public class ListActivity extends AppCompatActivity {
             int id = data.getIntExtra(com.example.android.SemanticApp.NewHolidayActivity.EXTRA_REPLY_ID, -1);
 
             if (id != -1) {
-                mHolidayViewModel.update(new Holiday(id, holiday_data, holiday_note_data, holiday_opinion_data));
+                mHolidayViewModel.update(new Holiday(id, holiday_data, holiday_note_data, holiday_opinion_data, ""));
             } else {
                 Toast.makeText(this, R.string.unable_to_update,
                         Toast.LENGTH_LONG).show();

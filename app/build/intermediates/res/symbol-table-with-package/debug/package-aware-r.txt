@@ -927,6 +927,7 @@ drawable googleg_standard_color_18
 drawable ic_action_name
 drawable ic_add_black_24dp
 drawable ic_arrow_down_24dp
+drawable ic_bbguns4less
 drawable ic_contact
 drawable ic_favorite
 drawable ic_food
@@ -995,6 +996,8 @@ id actions
 id activity_chooser_view_content
 id add
 id add_holiday_label
+id add_holiday_label2
+id add_holiday_label3
 id adjust_height
 id adjust_width
 id alertTitle
@@ -1080,6 +1083,8 @@ id line3
 id list
 id listMode
 id list_holiday_button
+id list_holiday_button2
+id list_holiday_button3
 id list_item
 id masked
 id media_actions

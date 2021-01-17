@@ -35,7 +35,7 @@ public class HolidayDao_Impl implements HolidayDao {
     this.__insertionAdapterOfHoliday = new EntityInsertionAdapter<Holiday>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR IGNORE INTO `holiday_table`(`id`,`holiday`,`notes`,`opinion`) VALUES (nullif(?, 0),?,?,?)";
+        return "INSERT OR IGNORE INTO `holiday_table`(`id`,`holiday`,`product`,`notes`,`opinion`) VALUES (nullif(?, 0),?,?,?,?)";
       }
 
       @Override
@@ -46,15 +46,20 @@ public class HolidayDao_Impl implements HolidayDao {
         } else {
           stmt.bindString(2, value.getHoliday());
         }
-        if (value.getNotes() == null) {
+        if (value.getProduct() == null) {
           stmt.bindNull(3);
         } else {
-          stmt.bindString(3, value.getNotes());
+          stmt.bindString(3, value.getProduct());
         }
-        if (value.getOpinion() == null) {
+        if (value.getNotes() == null) {
           stmt.bindNull(4);
         } else {
-          stmt.bindString(4, value.getOpinion());
+          stmt.bindString(4, value.getNotes());
+        }
+        if (value.getOpinion() == null) {
+          stmt.bindNull(5);
+        } else {
+          stmt.bindString(5, value.getOpinion());
         }
       }
     };
@@ -72,7 +77,7 @@ public class HolidayDao_Impl implements HolidayDao {
     this.__updateAdapterOfHoliday = new EntityDeletionOrUpdateAdapter<Holiday>(__db) {
       @Override
       public String createQuery() {
-        return "UPDATE OR ABORT `holiday_table` SET `id` = ?,`holiday` = ?,`notes` = ?,`opinion` = ? WHERE `id` = ?";
+        return "UPDATE OR ABORT `holiday_table` SET `id` = ?,`holiday` = ?,`product` = ?,`notes` = ?,`opinion` = ? WHERE `id` = ?";
       }
 
       @Override
@@ -83,17 +88,22 @@ public class HolidayDao_Impl implements HolidayDao {
         } else {
           stmt.bindString(2, value.getHoliday());
         }
-        if (value.getNotes() == null) {
+        if (value.getProduct() == null) {
           stmt.bindNull(3);
         } else {
-          stmt.bindString(3, value.getNotes());
+          stmt.bindString(3, value.getProduct());
         }
-        if (value.getOpinion() == null) {
+        if (value.getNotes() == null) {
           stmt.bindNull(4);
         } else {
-          stmt.bindString(4, value.getOpinion());
+          stmt.bindString(4, value.getNotes());
         }
-        stmt.bindLong(5, value.getId());
+        if (value.getOpinion() == null) {
+          stmt.bindNull(5);
+        } else {
+          stmt.bindString(5, value.getOpinion());
+        }
+        stmt.bindLong(6, value.getId());
       }
     };
     this.__preparedStmtOfDeleteAll = new SharedSQLiteStatement(__db) {
@@ -159,6 +169,7 @@ public class HolidayDao_Impl implements HolidayDao {
     try {
       final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
       final int _cursorIndexOfMHoliday = _cursor.getColumnIndexOrThrow("holiday");
+      final int _cursorIndexOfMProduct = _cursor.getColumnIndexOrThrow("product");
       final int _cursorIndexOfMNotes = _cursor.getColumnIndexOrThrow("notes");
       final int _cursorIndexOfMOpinion = _cursor.getColumnIndexOrThrow("opinion");
       final Holiday[] _result = new Holiday[_cursor.getCount()];
@@ -171,6 +182,9 @@ public class HolidayDao_Impl implements HolidayDao {
         final int _tmpId;
         _tmpId = _cursor.getInt(_cursorIndexOfId);
         _item.setId(_tmpId);
+        final String _tmpMProduct;
+        _tmpMProduct = _cursor.getString(_cursorIndexOfMProduct);
+        _item.setProduct(_tmpMProduct);
         final String _tmpMNotes;
         _tmpMNotes = _cursor.getString(_cursorIndexOfMNotes);
         _item.setNotes(_tmpMNotes);
@@ -209,6 +223,7 @@ public class HolidayDao_Impl implements HolidayDao {
         try {
           final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
           final int _cursorIndexOfMHoliday = _cursor.getColumnIndexOrThrow("holiday");
+          final int _cursorIndexOfMProduct = _cursor.getColumnIndexOrThrow("product");
           final int _cursorIndexOfMNotes = _cursor.getColumnIndexOrThrow("notes");
           final int _cursorIndexOfMOpinion = _cursor.getColumnIndexOrThrow("opinion");
           final List<Holiday> _result = new ArrayList<Holiday>(_cursor.getCount());
@@ -220,6 +235,125 @@ public class HolidayDao_Impl implements HolidayDao {
             final int _tmpId;
             _tmpId = _cursor.getInt(_cursorIndexOfId);
             _item.setId(_tmpId);
+            final String _tmpMProduct;
+            _tmpMProduct = _cursor.getString(_cursorIndexOfMProduct);
+            _item.setProduct(_tmpMProduct);
+            final String _tmpMNotes;
+            _tmpMNotes = _cursor.getString(_cursorIndexOfMNotes);
+            _item.setNotes(_tmpMNotes);
+            final String _tmpMOpinion;
+            _tmpMOpinion = _cursor.getString(_cursorIndexOfMOpinion);
+            _item.setOpinion(_tmpMOpinion);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    }.getLiveData();
+  }
+
+  @Override
+  public LiveData<List<Holiday>> getBBHolidays() {
+    final String _sql = "SELECT * from holiday_table where product = \"BBGUNS4LESS\" ORDER BY id DESC ";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    return new ComputableLiveData<List<Holiday>>() {
+      private Observer _observer;
+
+      @Override
+      protected List<Holiday> compute() {
+        if (_observer == null) {
+          _observer = new Observer("holiday_table") {
+            @Override
+            public void onInvalidated(@NonNull Set<String> tables) {
+              invalidate();
+            }
+          };
+          __db.getInvalidationTracker().addWeakObserver(_observer);
+        }
+        final Cursor _cursor = __db.query(_statement);
+        try {
+          final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
+          final int _cursorIndexOfMHoliday = _cursor.getColumnIndexOrThrow("holiday");
+          final int _cursorIndexOfMProduct = _cursor.getColumnIndexOrThrow("product");
+          final int _cursorIndexOfMNotes = _cursor.getColumnIndexOrThrow("notes");
+          final int _cursorIndexOfMOpinion = _cursor.getColumnIndexOrThrow("opinion");
+          final List<Holiday> _result = new ArrayList<Holiday>(_cursor.getCount());
+          while(_cursor.moveToNext()) {
+            final Holiday _item;
+            final String _tmpMHoliday;
+            _tmpMHoliday = _cursor.getString(_cursorIndexOfMHoliday);
+            _item = new Holiday(_tmpMHoliday);
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            _item.setId(_tmpId);
+            final String _tmpMProduct;
+            _tmpMProduct = _cursor.getString(_cursorIndexOfMProduct);
+            _item.setProduct(_tmpMProduct);
+            final String _tmpMNotes;
+            _tmpMNotes = _cursor.getString(_cursorIndexOfMNotes);
+            _item.setNotes(_tmpMNotes);
+            final String _tmpMOpinion;
+            _tmpMOpinion = _cursor.getString(_cursorIndexOfMOpinion);
+            _item.setOpinion(_tmpMOpinion);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    }.getLiveData();
+  }
+
+  @Override
+  public LiveData<List<Holiday>> getWhopperHolidays() {
+    final String _sql = "SELECT * from holiday_table where product = \"Whopper\" ORDER BY id DESC";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    return new ComputableLiveData<List<Holiday>>() {
+      private Observer _observer;
+
+      @Override
+      protected List<Holiday> compute() {
+        if (_observer == null) {
+          _observer = new Observer("holiday_table") {
+            @Override
+            public void onInvalidated(@NonNull Set<String> tables) {
+              invalidate();
+            }
+          };
+          __db.getInvalidationTracker().addWeakObserver(_observer);
+        }
+        final Cursor _cursor = __db.query(_statement);
+        try {
+          final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
+          final int _cursorIndexOfMHoliday = _cursor.getColumnIndexOrThrow("holiday");
+          final int _cursorIndexOfMProduct = _cursor.getColumnIndexOrThrow("product");
+          final int _cursorIndexOfMNotes = _cursor.getColumnIndexOrThrow("notes");
+          final int _cursorIndexOfMOpinion = _cursor.getColumnIndexOrThrow("opinion");
+          final List<Holiday> _result = new ArrayList<Holiday>(_cursor.getCount());
+          while(_cursor.moveToNext()) {
+            final Holiday _item;
+            final String _tmpMHoliday;
+            _tmpMHoliday = _cursor.getString(_cursorIndexOfMHoliday);
+            _item = new Holiday(_tmpMHoliday);
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            _item.setId(_tmpId);
+            final String _tmpMProduct;
+            _tmpMProduct = _cursor.getString(_cursorIndexOfMProduct);
+            _item.setProduct(_tmpMProduct);
             final String _tmpMNotes;
             _tmpMNotes = _cursor.getString(_cursorIndexOfMNotes);
             _item.setNotes(_tmpMNotes);

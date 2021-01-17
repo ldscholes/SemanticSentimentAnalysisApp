@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#android.support.v4.content.FileProvider
-INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:116:9-125:20
+INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:132:9-141:20
 	android:grantUriPermissions
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:120:13-47
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:136:13-47
 	android:authorities
 		INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:118:13-60
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:134:13-60
 	android:exported
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:119:13-37
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:135:13-37
 	android:name
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:117:13-67
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:133:13-67
 manifest
-ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-128:12
-INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-128:12
-INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-128:12
-INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-128:12
+ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-144:12
+INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-144:12
+INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-144:12
+INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-144:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\1a565d561e73523cfde93032b5e4f241\design-27.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:preference-v7:27.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\5b701f9762c8454f771d6b437dba6891\preference-v7-27.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\96ec3159e9cdafe31c960eb8eede719e\appcompat-v7-27.1.1\AndroidManifest.xml:17:1-22:12
@@ -45,20 +45,20 @@ MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Liam\.gra
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\5e395bae4e00ec017ce476404d11e882\support-compat-27.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\2a54fb7d4a09e43fd13a659c38a9bf2a\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\426821499609b124edd91485548e30d0\viewmodel-1.1.1\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-128:12
-INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-128:12
-INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-128:12
+INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-144:12
+INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-144:12
+INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-144:12
 	package
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:3:5-46
 		INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-128:12
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-144:12
 		INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-128:12
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:1-144:12
 		INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -81,7 +81,7 @@ MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Liam\.gr
 	android:name
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:13:22-64
 application
-ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:15:5-126:19
+ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:15:5-142:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\c8390c608d9ebd3960e8c9af3469d9e0\constraint-layout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\c8390c608d9ebd3960e8c9af3469d9e0\constraint-layout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-location:16.0.0] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\27b83217cdd27bf0d8f14ec4c3151a22\play-services-location-16.0.0\AndroidManifest.xml:7:5-20
@@ -168,41 +168,45 @@ ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\m
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:61:42-85
 	android:name
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:61:13-41
-activity#com.example.android.SemanticApp.PlacesActivity
+activity#com.example.android.SemanticApp.ListActivityBB
 ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:68:9-75:20
 	android:parentActivityName
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:71:13-55
 	android:label
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:70:13-40
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:70:13-41
 	android:theme
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:69:44-87
 	android:name
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:69:13-43
-activity#com.example.android.SemanticApp.NewPlaceActivity
+activity#com.example.android.SemanticApp.ListActivityWhopper
 ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:76:9-83:20
 	android:parentActivityName
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:79:13-57
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:79:13-55
 	android:label
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:78:13-38
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:78:13-41
+	android:theme
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:77:49-92
 	android:name
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:77:13-45
-activity#com.example.android.SemanticApp.SettingsActivity
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:77:13-48
+activity#com.example.android.SemanticApp.PlacesActivity
 ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:84:9-91:20
 	android:parentActivityName
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:87:13-55
 	android:label
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:86:13-37
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:86:13-40
+	android:theme
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:85:44-87
 	android:name
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:85:13-45
-activity#com.example.android.SemanticApp.NewHolidayActivity
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:85:13-43
+activity#com.example.android.SemanticApp.NewPlaceActivity
 ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:92:9-99:20
 	android:parentActivityName
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:95:13-55
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:95:13-57
 	android:label
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:94:13-36
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:94:13-38
 	android:name
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:93:13-47
-activity#com.example.android.SemanticApp.LocationActivity
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:93:13-45
+activity#com.example.android.SemanticApp.SettingsActivity
 ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:100:9-107:20
 	android:parentActivityName
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:103:13-55
@@ -210,14 +214,30 @@ ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\m
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:102:13-37
 	android:name
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:101:13-45
-activity#com.example.android.SemanticApp.CameraActivity
+activity#com.example.android.SemanticApp.NewHolidayActivity
 ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:108:9-115:20
 	android:parentActivityName
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:111:13-55
 	android:label
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:110:13-35
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:110:13-36
 	android:name
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:109:13-43
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:109:13-47
+activity#com.example.android.SemanticApp.LocationActivity
+ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:116:9-123:20
+	android:parentActivityName
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:119:13-55
+	android:label
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:118:13-37
+	android:name
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:117:13-45
+activity#com.example.android.SemanticApp.CameraActivity
+ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:124:9-131:20
+	android:parentActivityName
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:127:13-55
+	android:label
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:126:13-35
+	android:name
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:125:13-43
 uses-sdk
 INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml
@@ -293,11 +313,11 @@ INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\sr
 		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:121:13-124:25
+ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:137:13-140:25
 	android:resource
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:123:17-51
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:139:17-51
 	android:name
-		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:122:17-67
+		ADDED from C:\Users\Liam\AndroidStudioProjects\SemanticApp\SemanticApp\app\src\main\AndroidManifest.xml:138:17-67
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\Liam\.gradle\caches\transforms-2\files-2.1\39953cb7825a7e15cb18a79c82893260\play-services-maps-16.0.0\AndroidManifest.xml:23:5-79
 	android:name

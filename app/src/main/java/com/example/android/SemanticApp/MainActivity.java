@@ -158,6 +158,17 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ListActivity.class);
         startActivity(intent);
     }
+
+    public void launchListBB(View view) {
+        Intent intent = new Intent(this, ListActivityBB.class);
+        startActivity(intent);
+    }
+
+    public void launchListWhopper(View view) {
+        Intent intent = new Intent(this, ListActivityWhopper.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onPause(){
         super.onPause();

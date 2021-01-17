@@ -23,16 +23,29 @@ public class HolidayRepository {
 
     private HolidayDao mHolidayDao;
     private LiveData<List<Holiday>> mAllHolidays;
+    private LiveData<List<Holiday>> mWhopperHolidays;
+    private LiveData<List<Holiday>> mBBHolidays;
     private int mLatestHolidayId;
 
     HolidayRepository(Application application) {
         HolidayRoomDatabase db = HolidayRoomDatabase.getDatabase(application);
         mHolidayDao = db.holidayDao();
         mAllHolidays = mHolidayDao.getAllHolidays();
+        mBBHolidays = mHolidayDao.getBBHolidays();
+        mWhopperHolidays = mHolidayDao.getWhopperHolidays();
+
     }
 
     LiveData<List<Holiday>> getAllHolidays() {
         return mAllHolidays;
+    }
+
+    LiveData<List<Holiday>> getBBHolidays() {
+        return mBBHolidays;
+    }
+
+    LiveData<List<Holiday>> getWhopperHolidays() {
+        return mWhopperHolidays;
     }
 
     public void insert(Holiday holiday) {

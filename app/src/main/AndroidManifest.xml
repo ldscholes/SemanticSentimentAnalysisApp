@@ -66,6 +66,22 @@
                 android:value="com.example.android.SemanticApp.MainActivity" />
         </activity>
         <activity
+            android:name=".ListActivityBB" android:theme="@style/AppTheme.NoActionBar"
+            android:label="Comment List"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.SemanticApp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ListActivityWhopper" android:theme="@style/AppTheme.NoActionBar"
+            android:label="Comment List"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.SemanticApp.MainActivity" />
+        </activity>
+        <activity
             android:name=".PlacesActivity" android:theme="@style/AppTheme.NoActionBar"
             android:label="Places List"
             android:parentActivityName=".MainActivity">
