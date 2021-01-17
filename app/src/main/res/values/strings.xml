@@ -44,50 +44,14 @@
     <string name="action_order_message">You selected Order.</string>
     <string name="action_status_message">You selected Status.</string>
     <string name="action_favorites_message">You selected Favorites.</string>
-    <string name="action_contact_message">You selected Contact.</string>
+    <string name="action_contact_message">Please contact scholel1@aston.ac.uk</string>
     <string name="title_activity_order">Order Activity</string>
-    <string name="app_name">Semantic</string>
+    <string name="app_name">redJester</string>
     <string name="button_help">Help</string>
-    <string name="activity_help">Help Activity</string>
-    <string name="help_message"><p>Mobile Travel Journal:</p>
-\n\n
-<p>Deadline 21 February 2020</p>
-\n\n
-<p><b>Scenario:</b></p>
-        \n\n
-<p>People often want to generate a record of their travels and holidays. You have been hired to create a working prototype of a mobile travel journal app - that is, a mobile application to help a user to record key features of their holidays/travel. The prototype must allow you to demonstrate how the mobile travel journal will work. The travel journal must be delivered in a way that is engaging to users, that is functional and usable (including when on the move), and that is accessible by a range of people with varying demographics and capabilities. The travel journal is to be provided for use on Android devices, and you may assume it will be used on touchscreen-based mobile devices.</p>
-        \n\n
-<p><b>Requirements:</b></p>
-        \n\n
-<p>1. The traveller should be able to create/edit/update/delete “holidays”. A holiday should include at least a name, start and end dates, traveller note, and list of travel companions. The traveller must enter the name and dates to save a holiday but it is up to the traveller if (s)he adds notes and/or travel companions. You can include other fields as you wish in your design.</p>
-   \n\n
-        <p>2. The traveller should be able to add “visited places” to a holiday. The traveller should be able to edit/delete “visited places”. A visited place should include at least a name, date, location (recorded manually and/or automatically based on current location), traveller notes, and photo. The traveller must enter the name and date to save a visited place to a holiday but it is up to the traveller if (s)he enters notes and photos. You can include other fields as you wish in your design.</p>
-   \n\n
-        <p>3. A traveller should be able to view visited places on a map. Clicking on markers on the map should allow the user to view more information about the visited place. The traveller should have the choice as to whether to view, on the map, all visited places, those associated with a given holiday, those within a given time period, or those visited with specific companions.</p>
-   \n\n
-        <p>4. The traveller should be able to take a photo and associate it with a holiday (generally) or visited place (specifically). The traveller should be able to tag each photo and associate each photo with a geographic location (manually or automatically).</p>
-   \n\n
-        <p>5. The traveller should be able to view a “travel gallery” containing photos from all of his/her travels, which (s)he should be able to sort by date, tag, holiday, visited place, or geographic location. The traveller should be able to search and cluster photos according to date, tag, holiday, visited place, or geographic location.</p>
-   \n\n
-        <p>6. The traveller should be able to view the location of places visited on a map, clicking on the map marker to view photos and associated information.</p>
-   \n\n
-        <p>7. The traveller should be able to share holidays/visited places/specific photos with friends using email, SMS, or other social media.</p>
-   \n\n
-        <p>8. Based on his/her current or entered position, a traveller should be able to identify nearby places of interest to visit according to category of place (e.g., places to eat, tourist attractions, etc).</p>
-   \n\n
-        <p>9. Data should be stored in persistant storage of some kind. 10. The app should be designed to consider accessibility by incorporating screen reader facilities.</p>
-        <p></p>
-   \n\n
-        <p><b>Important points:</b></p>
-   \n\n
-        <p>You will need to submit a deliverable, a report and also to demonstrate your deliverable.</p>
-   \n\n
-        <p>• The deliverable should be written in Java using Android Studio. The deliverable will carry a 65% weighting.</p>
-   \n\n
-        <p>• You will be required to give a short demo of your deliverable and to verbally answer questions about your design/development. You should prepare for your demo by thinking about how best to walk through your system to highlight its design strengths and illustrate the extent to which it covers the stipulated requirements. Demos will be scheduled for the weeks following your coursework submission and will either be on campus during the exam week or on-line via Google Hangouts. Your demo is compulsory: failure to attend a demo will result in a mark of zero being awarded for the module as a whole.</p>
-   \n\n
-        <p>• You will also need to submit a report on your deliverable. This report should be no longer than 1500 words. Your report will carry a 35% weighting and should cover: – Background research and design motivation – Design: How does the user navigate around your app, what design principles did you follow. Describe the design for the structure/architecture of your software. – Implementation: Outline how your design was implemented, highlighting useful software design patterns and interesting parts of your code. – Evaluation: How well does your solution meet the requirements and how well did you manage the project.</p></string>
-    <string name="article_title">Help and Information</string>
+    <string name="activity_help">Help and Information</string>
+    <string name="help_message">Welcome to the RedJester Human Evaluation Application.
+    This App shows comments about the relevant products and allows for you to classify them.</string>
+    <string name="article_title"> Welcome to the RedJester App</string>
     <string name="action_help">Help</string>
 
     <!-- TODO: Remove or change this placeholder text -->

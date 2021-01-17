@@ -1053,7 +1053,6 @@ id fill_horizontal
 id fill_vertical
 id fixed
 id forever
-id gallery_button
 id ghost_view
 id gone
 id groups
@@ -1082,10 +1081,6 @@ id list
 id listMode
 id list_holiday_button
 id list_item
-id list_place_button
-id location_button
-id location_label
-id map_button
 id masked
 id media_actions
 id message
@@ -1107,7 +1102,6 @@ id parent
 id parentPanel
 id parent_matrix
 id percent
-id photo_label
 id pin
 id place_autocomplete_clear_button
 id place_autocomplete_powered_by_google
@@ -1201,10 +1195,8 @@ id transition_transform
 id uniform
 id up
 id useLogo
-id view_map_label
 id view_offset_helper
 id view_opinion
-id view_trip_label
 id visible
 id wide
 id withText
